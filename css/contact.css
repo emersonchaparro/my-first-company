@@ -1,0 +1,87 @@
+#map {
+  height: 300px;  /* The height is 400 pixels */
+  width: 80%;  /* The width is the width of the web page */
+  margin: auto;
+ }
+
+form header {
+  margin: 0 0 20px 0;
+}
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+form header h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > label {
+	width: 24%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div{
+  width: 70%;
+  float: right;
+  padding-right: 20px;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+button{
+  width: 100px;
+}
+form > div > label {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0;
+  }
+  form > div > label{
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div{
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%;
+  }
+}

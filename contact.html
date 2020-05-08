@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>My First Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/contact.css">
+  </head>
+  <body>
+      <header>
+  	  <a href="index.html" class="header__logo">
+        <img class="logo-litle" src="images/logo-litle.png" alt="logo litle"/>
+        <img class="logo" src="images/logo.png" alt="logo"/>
+      </a>
+  	  <input class="header__checkbox" id="checkbox_id" type="checkbox"/>
+      <label class="header__burger" for="checkbox_id">
+        <span class="header__burger-icon"></span>
+      </label>
+  	  <ul class="header__menu">
+  		<li><a class="header__title" href="index.html">Home</a></li>
+  		<li><a class="header__title" href="about.html">About</a></li>
+  		<li><a class="header__title" href="contact.html">Contact</a></li>
+  	  </ul>
+  	</header>
+    <main>
+      <div class="main__tittle">
+        CONTACT US
+      </div>
+      <form action="#">
+        <div>
+          <label for="nameId">Full Name:</label>
+          <div>
+            <input id="nameId" name="name" type="text" value="" size="8" tabindex="1" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="emailId">Email:</label>
+          <div>
+            <input id="emailId" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" required>
+         </div>
+        </div>
+
+        <div>
+          <label for="messageId">Message:</label>
+
+          <div>
+            <textarea id="messageId" name="message" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+          </div>
+        </div>
+        <div>
+      		<div>
+            <button onclick="myFunction()">OK</button>
+          </div>
+      	</div>
+      </form>
+      <div class="main__tittle">
+        LOCATION
+      </div>
+      <div id="map"></div>
+    </main>
+    <footer>
+  		<div id="footer__author">Student: EMERSON CHAPARRO AMPA</div>
+  		<div id="footer__icons">
+  			<a href="#"><i class="fa fa-facebook"></i></a>
+  			<a href="#"><i class="fa fa-twitter"></i></a>
+  			<a href="#"><i class="fa fa-youtube"></i></a>
+  		</div>
+  	</footer>
+    <script src="js/contact.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHO1obyHFwmJo8NQY_TP8l_JJD6AkSpJQ&callback=initMap">
+    </script>
+  </body>
+</html>
